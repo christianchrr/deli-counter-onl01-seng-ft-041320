@@ -7,7 +7,7 @@ def line(katz_deli)
   else
     num = 1
     katz_deli.each do |customer|
-      puts "The line is currently: #{num}. #{customer}"
+      line_position << "The line is currently: #{num}. #{customer}"
       num += 1
     end
   end
