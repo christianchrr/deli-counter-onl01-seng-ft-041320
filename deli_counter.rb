@@ -4,8 +4,9 @@ def line(katz_deli)
   line_position = []
   if katz_deli.empty?
     puts "The line is currently empty."
-  else 
-    puts "#{katz_deli}. #{katz_deli.length}"
+  else
+    katz_deli.each_with_index do |customer, i|
+    puts "#{customer}. #{i + 1}"
   end
 end
 
