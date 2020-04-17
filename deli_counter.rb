@@ -6,7 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |customer, i|
-      puts "The line is currently: #{katz_deli[i]}. #{katz_deli.join(" ")}"
+      puts "The line is currently: #{i + 1}. #{katz_deli.join(" ")}"
     end
   end
 end
