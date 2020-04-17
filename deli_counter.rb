@@ -5,10 +5,8 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    num = 1
-    katz_deli.each do |customer|
-      line_position <<  "#{num}. #{customer}"
-      num += 1
+    katz_deli.each_with_index do |customer, i|
+      line_position <<  "#{i + 1}. #{customer}"
     end
     puts "The line is currently: #{line_position.join(" ")}"
   end
